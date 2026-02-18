@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Création d'une application pour trouver le pays idéal pour votre expatriation - Ariane Souchard</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .highlight {
+	  background: #f0f8ff; /* bleu très clair */
+	  padding: 20px;
+	  border-left: 5px solid var(--bleu-clair);
+	  margin-bottom: 30px;
+	}
+
+	.highlight h3 {
+	  color: var(--bleu-fonce);
+	}
+
+	.highlight ul li {
+	  color: #333;
+	}
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+    .screenshot {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .screenshot img {
+      width: 90%;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .screenshot p {
+      font-style: italic;
+      margin-top: 10px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="sae.html">Projets & Réalisations</a></li>
+        <li><a href="stage.html">Stage</a></li>
+		<li><a href="alternance.html">Alternance</a></li>
+        <li><a href="perspectives.html">Perspectives</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Création d'une application pour trouver le pays idéal pour votre expatriation</h2>
+
+    <div class="highlight">
+      <h3>Présentation du projet</h3>
+      <p>Ce projet R-Shiny a été réalisé pour <strong>Settle Home</strong>, une entreprise fictive accompagnant les Français dans le choix de leur pays d’expatriation. À partir de données issues de <a href="https://www.numbeo.com/" target="_blank">Numbeo</a> (disponibles sur <a href="https://www.kaggle.com/datasets" target="_blank">Kaggle</a>), nous avons conçu une application interactive permettant d’évaluer la qualité de vie dans 236 pays selon différents critères.</p>
+    </div>
+
+    <div class="highlight">
+      <h3>Objectifs et livrables</h3>
+      <ul>
+        <li>Identifier les meilleures destinations selon les critères définis par l'utilisateur</li>
+        <li>Concevoir une interface claire et intuitive avec <strong>R-Shiny</strong></li>
+        <li>Analyser les relations entre les variables via des méthodes multivariées</li>
+        <li>Fournir une fiche descriptive pour chaque pays sélectionné</li>
+        <li>Restituer les résultats sous forme de cartes, graphiques et tableaux dynamiques</li>
+      </ul>
+    </div>
+
+    <div class="highlight">
+      <h3>Données utilisées</h3>
+      <p>Les données regroupent 236 pays avec des variables comme :</p>
+      <ul>
+        <li><strong>Économie :</strong> PIB, pouvoir d’achat, coût de la vie</li>
+        <li><strong>Conditions de vie :</strong> sécurité, santé, climat, pollution, temps de trajet domicile-travail</li>
+        <li><strong>Données démographiques :</strong> population, espérance de vie</li>
+        <li><strong>Coordonnées géographiques :</strong> latitude, longitude, continent</li>
+      </ul>
+    </div>
+	
+	<div class="screenshot">
+		  <img src="images/097203e7-c4a4-4d9e-90f5-ac0338eb3985.png" alt="Fiche descriptive d’un pays">
+		  <p>Fiche interactive avec le drapeau et les principaux indicateurs d’un pays</p>
+		</div>
+	<div class="screenshot">
+      <img src="images/dbcc22bf-f8b8-4ca0-bc48-3cb11b0b8a05.png" alt="Interface de l'application">
+      <p>Interface de sélection des critères et de comparaison entre pays</p>
+    </div>	
+	
+    <div class="screenshot">
+      <img src="images/984e7464-9c96-4c1a-ab1b-ff987c41ab87.png" alt="Carte des scores de qualité de vie">
+      <p>Carte des scores globaux de qualité de vie dans le monde</p>
+    </div>
+
+    <div class="screenshot">
+      <img src="images/129a135a-dcdb-4b7d-966c-b4a996a04778.png" alt="Visualisation ACP">
+      <p>ACP (Analyse en Composantes Principales) et le Clustering – Regroupement des pays selon leurs indicateurs</p>
+    </div>
+
+    
+
+    
+
+    <div class="highlight">
+      <h3>Compétences mobilisées</h3>
+      <ul>
+        <li>Utilisation de <strong>R et R-Shiny</strong> pour concevoir une application interactive</li>
+        <li>Traitement et visualisation de données multivariées et géographiques</li>
+        <li>Application de l’<strong>ACP</strong> et analyse des corrélations entre variables</li>
+        <li>Conception <strong>UX/UI</strong> pour la clarté et l’intuitivité de l’outil</li>
+      </ul>
+    </div>
+
+    <div class="highlight">
+      <h3>Lien avec les compétences du Programme National</h3>
+      <ul>
+        <li><strong>AC1</strong> : Collecter, préparer et transformer des données complexes</li>
+        <li><strong>AC2</strong> : Mettre en œuvre des méthodes d’analyse multivariée</li>
+        <li><strong>AC3</strong> : Développer des applications de visualisation pour l’aide à la décision</li>
+        <li><strong>AC4</strong> : Présenter les résultats de manière claire à un public non expert</li>
+      </ul>
+    </div>
+
+    <div class="highlight">
+      <h3>Axe d’amélioration</h3>
+      <p>Le projet pourrait être enrichi par l’ajout de profils utilisateurs types, une personnalisation des résultats ou encore l’intégration d’une API pour des données mises à jour automatiquement.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Ariane Souchard - Portfolio Professionnel</p>
+  </footer>
+</body>
+</html>

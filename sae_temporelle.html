@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analyse temporelle du tourisme hôtelier en Europe - Ariane Souchard</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .highlight {
+	  background: #f0f8ff; /* bleu très clair */
+	  padding: 20px;
+	  border-left: 5px solid var(--bleu-clair);
+	  margin-bottom: 30px;
+	}
+
+	.highlight h3 {
+	  color: var(--bleu-fonce);
+	}
+
+	.highlight ul li {
+	  color: #333;
+	}
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+    .screenshot {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .screenshot img {
+      width: 90%;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .screenshot p {
+      font-style: italic;
+      margin-top: 10px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="sae.html">Projets & Réalisations</a></li>
+        <li><a href="stage.html">Stage</a></li>
+		<li><a href="alternance.html">Alternance</a></li>
+        <li><a href="perspectives.html">Perspectives</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Analyse temporelle de l’évolution du tourisme hôtelier en Europe (2011–2024)</h2>
+
+    <div class="highlight">
+      <h3>Présentation générale du projet</h3>
+      <p>Ce projet consistait à analyser une série temporelle mensuelle du nombre de nuitées d’hôtels en Europe entre 2011 et 2024, avec un accent particulier sur l’impact de la pandémie de Covid-19. L’objectif était de modéliser les grandes tendances, identifier la saisonnalité, et proposer des prévisions à l’aide de méthodes statistiques en R.</p>
+    </div>
+
+    <div class="highlight">
+      <h3>Objectifs et livrables</h3>
+      <ul>
+        <li>Étudier l’évolution du tourisme hôtelier européen à travers une série chronologique</li>
+        <li>Décomposer la série en composantes (tendance, saisonnalité)</li>
+        <li>Mettre en œuvre deux approches de prévision : paramétrique et Holt-Winters</li>
+        <li>Comparer les prévisions aux valeurs observées après 2019</li>
+        <li>Présenter une synthèse claire dans un notebook R et un support visuel</li>
+      </ul>
+    </div>
+
+    <div class="highlight">
+      <h3>Travaux réalisés</h3>
+      <p>J’ai pris en charge le nettoyage des données, la transformation des dates, la création des indicateurs temporels, la modélisation de la tendance linéaire et de la saisonnalité avec régression. J’ai ensuite combiné les prédictions, utilisé la méthode Holt-Winters pour comparaison, puis étudié les écarts. Enfin, j’ai rédigé une synthèse visuelle avec interprétation des résultats.</p>
+    </div>
+
+    <div class="screenshot">
+      <img src="images/cd72124e-9024-4111-8731-5d57125b0a10.png" alt="Page d’accueil notebook R">
+      <p>Structure du notebook : collecte, prétraitement, analyse et prévisions</p>
+    </div>
+
+    <div class="screenshot">
+      <img src="images/3.png" alt="Prévisions vs Réel">
+      <p>Prévisions (bleu) vs valeurs réelles après 2020 (rouge)</p>
+    </div>
+
+    <div class="screenshot">
+      <img src="images/2.png" alt="Comparaison des approches">
+      <p>Comparaison Prédictions paramétriques (rouge), Prédictions Holt-Winters (bleu) et Données réelles (noir)</p>
+    </div>
+
+    <div class="screenshot">
+      <img src="images/61837f52-9b34-468c-a44d-efeead44c763.png" alt="Slide PowerPoint synthèse">
+      <p>Résumé des résultats dans une synthèse</p>
+    </div>
+
+    <div class="highlight">
+      <h3>Compétences mobilisées</h3>
+      <ul>
+        <li>Analyse de séries temporelles sous R</li>
+        <li>Décomposition en tendance/saisonnalité</li>
+        <li>Application de méthodes de prévision statistiques</li>
+        <li>Comparaison des écarts et évaluation de performance</li>
+        <li>Datavisualisation et communication des résultats</li>
+      </ul>
+    </div>
+
+    <div class="highlight">
+      <h3>Lien avec les compétences du Programme National</h3>
+      <ul>
+        <li></strong> Analyse des données temporelles – acquis</li>
+        <li></strong> Interprétation et limites des modèles – acquis</li>
+        <li></strong> Choix et présentation d’indicateurs pertinents – en cours</li>
+        <li></strong> Rigueur et clarté des productions – acquis</li>
+      </ul>
+    </div>
+
+    <div class="highlight">
+      <h3>Difficultés rencontrées et axes de progression</h3>
+      <p>L’ajustement des modèles à la forte rupture de tendance causée par la pandémie a été un vrai défi. Il a fallu ajuster manuellement la période d’analyse et choisir la méthode la plus robuste. Pour progresser, je souhaite approfondir les méthodes de prévision avec intervalle de confiance et les métriques d’évaluation des modèles.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Ariane Souchard - Portfolio Professionnel</p>
+  </footer>
+</body>
+</html>

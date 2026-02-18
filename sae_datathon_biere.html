@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datathon - Optimisation du bénéfice liée à la vente de bière</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .highlight {
+      background: #f0f8ff;
+      padding: 20px;
+      border-left: 5px solid var(--bleu-clair);
+      margin-bottom: 30px;
+    }
+
+    .highlight h3 {
+      color: var(--bleu-fonce);
+    }
+
+    .highlight ul li {
+      color: #333;
+    }
+
+    .screenshot {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .screenshot img {
+      width: 90%;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .screenshot p {
+      font-style: italic;
+      margin-top: 10px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="sae.html">Projets & Réalisations</a></li>
+      <li><a href="stage.html">Stage</a></li>
+      <li><a href="alternance.html">Alternance</a></li>
+      <li><a href="perspectives.html">Perspectives</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Datathon – Optimisation du bénéfice liée à la vente de bière</h2>
+
+  <div class="highlight">
+    <h3>Présentation générale du projet</h3>
+
+    <p>
+      Ce projet a été réalisé dans le cadre d’un <strong>datathon pédagogique</strong>,
+      organisé comme une <strong>compétition entre tous les groupes de la promotion</strong>
+      du BUT Sciences des Données, en partenariat avec le
+      <strong>Groupe Cozigou</strong> et <strong>Orange Business</strong>.
+    </p>
+
+    <p>
+      Le travail s’appuie sur <strong>trois années de données commerciales</strong>
+      (clients, ventes, produits) du Groupe Cozigou, sur le périmètre breton.
+      L’objectif était d’analyser la vente de bière afin d’identifier des leviers
+      d’amélioration de la performance commerciale.
+    </p>
+
+    <p>
+      Le tableau de bord développé a été conçu comme un
+      <strong>outil d’aide à la décision destiné aux commerciaux terrain</strong>.
+      Il vise à faire évoluer la démarche commerciale d’une
+      <strong>vente basée sur un catalogue</strong> vers un
+      <strong>conseil plus expert</strong>, en s’appuyant sur les données
+      pour <strong>maximiser la rentabilité</strong>.
+    </p>
+
+    <p>
+      Deux niveaux de compétition étaient proposés :
+      une compétition directe entre équipes travaillant sur la même problématique,
+      ainsi qu’un classement général entre l’ensemble des groupes.
+      <strong>Notre équipe a remporté les deux compétitions</strong>.
+    </p>
+  </div>
+
+  <div class="highlight">
+    <h3>Tableau de bord et simulateur développés</h3>
+
+    <div class="screenshot">
+      <img src="images/dashboard_datathon_biere.png" alt="Tableau de bord datathon – vente de bière">
+      <p>
+        Capture du tableau de bord développé.
+        <strong>Les données affichées sont fictives</strong> et utilisées uniquement
+        à des fins de démonstration du fonctionnement de l’outil.
+      </p>
+    </div>
+
+    <p>
+      Le tableau de bord intègre un <strong>simulateur de positionnement et de potentiel</strong>
+      destiné aux commerciaux. Lors d’un rendez-vous, le commercial peut
+      <strong>renseigner directement les informations du bar</strong>, telles que :
+    </p>
+
+    <ul>
+      <li>le chiffre d’affaires annuel estimé ;</li>
+      <li>l’effectif du bar (en équivalent temps plein – ETP) ;</li>
+      <li>le nombre de becs actuellement installés ;</li>
+      <li>la localisation de l’établissement (proximité de la mer, zone intérieure, etc.).</li>
+    </ul>
+
+    <p>
+      À partir de ces éléments, le <strong>modèle développé dans le notebook</strong>
+      calcule un <strong>nombre de becs optimal</strong>.
+      Par exemple, pour un bar situé à moins de 10 km de la côte,
+      avec un chiffre d’affaires de 50 000 € et un effectif de 2 ETP,
+      le simulateur peut recommander <strong>6 becs</strong>.
+    </p>
+
+    <p>
+      Cet outil permet ainsi au commercial de s’appuyer sur la donnée
+      pour argumenter ses choix et proposer une solution adaptée,
+      plutôt qu’une simple vente standardisée.
+    </p>
+  </div>
+
+  <div class="highlight">
+  <h3>Travail réalisé dans le notebook d’analyse</h3>
+
+	  <p>
+		Le cœur du projet a été réalisé dans un <strong>notebook Python</strong>, qui nous a permis de
+		nettoyer les données, construire une base “1 ligne = 1 bar”, puis développer les modèles
+		utilisés dans l’outil final.
+	  </p>
+
+	  <h4>1. Préparation et nettoyage des données</h4>
+	  <p>
+		Import de plusieurs tables (clients, produits, ventes, tirages), normalisation des colonnes,
+		gestion des valeurs manquantes, conversion des dates et des montants (virgules → nombres),
+		et suppression de variables peu exploitables.
+	  </p>
+
+	  <h4>2. Construction du périmètre “bars & bières”</h4>
+	  <p>
+		Filtrage des produits de la famille <strong>“Bière”</strong>, sélection des clients de catégorie
+		<strong>“Bar”</strong>, puis calcul du <strong>nombre total de becs</strong> par client à partir des données de tirage.
+	  </p>
+
+	  <h4>3. Création des variables et analyse</h4>
+	  <p>
+		Création d’une table de travail avec le <strong>CA 12 mois</strong>, les <strong>effectifs (ETP)</strong>,
+		la <strong>zone littorale</strong> (encodée) et la <strong>distance à la mer</strong>.
+		Mise en place d’une “matrice de présence” des bières achetées (présence/absence).
+	  </p>
+
+	  <h4>4. Modèles et résultats</h4>
+	  <p>
+		Deux approches complémentaires ont été testées :
+		<strong>(A)</strong> un modèle de <strong>régression</strong> pour estimer le <strong>nombre de becs recommandé</strong> selon le profil du bar,
+		et <strong>(B)</strong> un modèle de <strong>recommandation multi-label</strong> pour proposer des bières pertinentes.
+		Les modèles ont été évalués puis sauvegardés pour alimenter le tableau de bord.
+	  </p>
+
+	  <p><em>
+		Ce notebook sert donc de base technique : il garantit la cohérence des données et des recommandations affichées dans l’outil.
+	  </em></p>
+	</div>
+
+
+  <div class="highlight">
+    <h3>Compétences mobilisées</h3>
+    <ul>
+      <li>Nettoyage et préparation de données</li>
+      <li>Analyse exploratoire et interprétation des résultats</li>
+      <li>Aide à la décision à partir de modèles simples</li>
+      <li>Datavisualisation et restitution claire</li>
+      <li>Travail en équipe dans un contexte compétitif</li>
+    </ul>
+  </div>
+
+  <div class="highlight">
+    <h3>Difficultés rencontrées et axes de progression</h3>
+    <p>
+      La principale difficulté concernait la volumétrie des données
+      et la diversité des profils clients. Ce projet m’a permis
+      d’améliorer ma capacité à structurer une analyse et à rendre
+      les résultats accessibles aux utilisateurs finaux.
+    </p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 Ariane Souchard - Portfolio Professionnel</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ariane Souchard</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        :root{
+            --accent: #0057B8;
+            --accent-dark: #003f85;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: justify;
+        }
+
+        h2, h3 {
+            text-align: center;
+            color: var(--accent);
+        }
+
+        form {
+            margin-top: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: var(--accent-dark);
+        }
+
+        .cv-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .cv-container img {
+            max-width: 280px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            margin-bottom: 15px;
+        }
+
+        .cv-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .cv-btn:hover {
+            background-color: var(--accent-dark);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="sae.html">Projets & Réalisations</a></li>
+                <li><a href="stage.html">Stage</a></li>
+				<li><a href="alternance.html">Alternance</a></li>
+                <li><a href="perspectives.html">Perspectives</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Contactez-moi</h2>
+
+        <div style="max-width: 700px; margin: 30px auto; font-size: 18px; line-height: 1.6;">
+            <p><strong>Email :</strong> 
+                <a href="mailto:ariane.souchard@gmail.com">
+                    ariane.souchard@gmail.com
+                </a>
+            </p>
+
+            <p><strong>Téléphone :</strong> 06 95 XX XX 66</p>
+
+            <p><strong>LinkedIn :</strong>
+                <a 
+                    href="https://www.linkedin.com/in/ariane-souchard-6167b9296" 
+                    target="_blank" 
+                    rel="noopener"
+                >
+                    www.linkedin.com/in/ariane-souchard-6167b9296
+                </a>
+            </p>
+        </div>
+
+        <h3>Mon CV</h3>
+
+        <div class="cv-container">
+            <a href="cv_ariane_souchard.pdf" target="_blank" rel="noopener">
+                <img 
+                    src="images/miniature-cv.png" 
+                    alt="Miniature de mon CV"
+                >
+            </a>
+
+            <br>
+
+            <a 
+                class="cv-btn"
+                href="cv_ariane_souchard.pdf" 
+                target="_blank" 
+                rel="noopener"
+            >
+                Consulter mon CV
+            </a>
+        </div>
+
+        <h3 style="margin-top: 60px;">Formulaire de contact</h3>
+
+        <form 
+            action="mailto:ariane.souchard@gmail.com" 
+            method="POST" 
+            enctype="text/plain"
+        >
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="Nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="Message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ariane Souchard - Portfolio Professionnel</p>
+    </footer>
+</body>
+</html>

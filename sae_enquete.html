@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAÉ - Enquête - Ariane Souchard</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .highlight {
+	  background: #f0f8ff; /* bleu très clair */
+	  padding: 20px;
+	  border-left: 5px solid var(--bleu-clair);
+	  margin-bottom: 30px;
+	}
+
+	.highlight h3 {
+	  color: var(--bleu-fonce);
+	}
+
+	.highlight ul li {
+	  color: #333;
+	}
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+    .screenshot {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .screenshot img {
+      width: 90%;
+      max-width: 700px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .screenshot p {
+      font-style: italic;
+      margin-top: 10px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="sae.html">Projets & Réalisations</a></li>
+        <li><a href="stage.html">Stage</a></li>
+		<li><a href="alternance.html">Alternance</a></li>
+        <li><a href="perspectives.html">Perspectives</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Mise en œuvre d'une enquête statistique</h2>
+
+    <div class="highlight">
+      <h3>Présentation générale de la SAÉ</h3>
+      <p>Cette SAE avait pour objectif de concevoir, réaliser et analyser des enquêtes statistiques. Deux projets réels nous ont été confiés : le premier pour le <strong>Salon de la Data & IA 2023</strong> à Nantes, avec plus de 1500 participants attendus ; le second pour la <strong>Golfe du Morbihan Vannes Agglomération (GMVA)</strong>, autour de l’évaluation du service de location de vélos. L’ensemble des travaux a été mené en binôme ou trinôme sur plusieurs semaines encadrées et en autonomie.</p>
+    </div>
+
+    <div class="highlight">
+      <h3>Livrables attendus</h3>
+      <ul>
+        <li><strong>Questionnaire :</strong> conception, structuration, mise en ligne avec Sphinx</li>
+        <li><strong>Analyse des réponses :</strong> traitements statistiques (Excel + Sphinx)</li>
+        <li><strong>Rapports :</strong> deux livrables pour les clients (Data & IA + GMVA)</li>
+      </ul>
+    </div>
+
+    <div class="highlight">
+      <h3>Travaux réalisés</h3>
+      <p>Dans la première enquête, j’ai conçu l’arborescence du questionnaire, rédigé les questions et participé à l’analyse de la satisfaction des visiteurs. Pour GMVA, j’ai réalisé le rapport de cadrage, les analyses univariées et croisées (dont des indices de liaison) ainsi que l’interprétation des résultats. Ces travaux ont été synthétisés dans un rapport remis au client.</p>
+    </div>
+
+    <div class="screenshot">
+      <img src="images/questionnaire_sphinx.png" alt="Aperçu du questionnaire Sphinx">
+      <p>Extrait du questionnaire conçu pour les visiteurs du salon Data & IA</p>
+    </div>
+
+    <div class="highlight">
+      <h3>Illustration : Analyse croisée sur l’enquête GMVA</h3>
+      <p>Nous avons croisé la variable « prolongement d’abonnement » avec la « raison initiale de l’abonnement ». Ci-dessous le tableau croisé et le graphique interprété :</p>
+      <div class="screenshot">
+        <img src="images/analyse_excel_gmva.png" alt="Tableau Excel - Prolongement vs Raison">
+        <p>Tableau croisé : Prolongement selon la raison d’abonnement</p>
+      </div>
+      <div class="screenshot">
+        <img src="images/analyse_excel_gmva1.png" alt="Graphique Excel - Prolongement vs Raison">
+        <p>Graphique : Tendance du renouvellement selon le motif initial</p>
+      </div>
+    </div>
+
+    <div class="highlight">
+      <h3>Compétences mobilisées</h3>
+      <ul>
+        <li>Conception de questionnaires et méthodologie d’enquête</li>
+        <li>Analyse statistique descriptive et croisée (Excel / Sphinx)</li>
+        <li>Utilisation d’indices de liaison (Cramer)</li>
+        <li>Rédaction de rapports professionnels et communication client</li>
+      </ul>
+    </div>
+
+    <div class="highlight">
+      <h3>Lien avec les compétences du Programme National</h3>
+      <ul>
+        <li></strong> Prise en compte des besoins client – acquis</li>
+        <li></strong> Formalisation claire et rigoureuse des résultats – acquis</li>
+        <li></strong> Mise en œuvre d’outils adaptés à l’analyse – en cours d’acquisition</li>
+        <li></strong> Valorisation des données pour l’aide à la décision – acquis</li>
+      </ul>
+    </div>
+
+    <div class="highlight">
+      <h3>Difficultés rencontrées et axes de progression</h3>
+      <p>La diversité des publics ciblés a nécessité une adaptation fine des questionnaires. J’ai aussi rencontré des difficultés à interpréter certains croisements sans biais. Ces expériences m’ont permis de progresser dans la restitution claire des résultats et dans la compréhension des enjeux client.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Ariane Souchard - Portfolio Professionnel</p>
+  </footer>
+</body>
+</html>

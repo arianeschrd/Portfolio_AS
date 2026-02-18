@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stage - Ariane Souchard</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    h3 {
+      color: #b30000;
+      margin-top: 40px;
+    }
+    .section-visuelle {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .section-visuelle img {
+      width: 95%;
+      max-width: 1000px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .context {
+      margin: 30px 0;
+      font-size: 18px;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="sae.html">Projets & Réalisations</a></li>
+        <li><a href="stage.html">Stage</a></li>
+		<li><a href="alternance.html">Alternance</a></li>
+        <li><a href="perspectives.html">Perspectives</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div style="width: 100%; display: flex; justify-content: center; margin-bottom: 30px;">
+      <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+        <img src="images/logo-carglass.png" alt="Logo Carglass" style="height: 45px;">
+        <h2 style="margin: 0; font-size: 28px; color: #b30000;">Stage chez Carglass – Business Data Analyst</h2>
+      </div>
+    </div>
+
+
+<p><strong>Période :</strong> 30 Mai – 20 juin 2025</p>
+<p><strong>Encadrement :</strong> Équipe Performance Opérationnelle – DSPC</p>
+
+<h3>Objectifs du stage</h3>
+<ul>
+  <li>Analyser les performances commerciales de l'entreprise</li>
+  <li>Créer des outils de suivi visuel pour faciliter la prise de décision</li>
+  <li>Comprendre pourquoi certains clients n’allaient pas jusqu’à l’intervention</li>
+</ul>
+
+<h3>Missions réalisées avant le tableau de bord</h3>
+<ul>
+  <li>Nettoyage automatique de fichiers de suivi hebdomadaire</li>
+  <li>Calcul de taux de transformation entre contact client et intervention réalisée</li>
+  <li>Analyse des produits urgents (vitres cassées, impactables rapidement)</li>
+  <li>Comparaison des performances entre 2024 et 2025 selon les canaux, produits ou zones</li>
+  <li>Contrôle de la cohérence entre les canaux d’entrée (web, téléphone, drive...) et les activités enregistrées</li>
+</ul>
+
+<div class="section-visuelle">
+  <img src="images/mail-exemple-carglass.png" alt="Exemple de mail hebdomadaire">
+  <p>Extrait réel d’un mail envoyé chaque semaine avec les analyses : performances par canal, nombre d’interventions, causes de blocage et recommandations pour les équipes réseau.</p>
+</div>
+
+<h3>Conception d’un tableau de bord pour le suivi de la non-conversion</h3>
+<p>
+  Une partie centrale de mon stage a consisté à créer un tableau de bord interactif dans Qlik Sense, destiné à analyser les cas où une opportunité de vente ne se transforme pas en intervention. L’objectif était d’aider les équipes à mieux comprendre les causes de ces situations et à agir dessus.
+</p>
+
+<h3>Deux grands cas de non-conversion</h3>
+<ul>
+  <li><strong>La mise en attente</strong> : le client souhaite un rendez-vous, mais celui-ci ne peut être fixé immédiatement (ex. : produit manquant, dossier incomplet, client injoignable). Sans relance, ces demandes restent souvent sans suite.</li>
+  <li><strong>Le no-show</strong> : le client a pris rendez-vous mais ne se présente pas à la date prévue, sans prévenir. Cela engendre une perte directe de productivité et désorganise les plannings.</li>
+</ul>
+
+<h3>Structure du tableau de bord</h3>
+<p>
+  Le tableau de bord a été organisé en deux volets distincts :
+</p>
+<ul>
+  <li>Une vue dédiée aux mises en attente, avec des filtres (produit, centre, canal, semaine...) et des graphiques sur les causes principales</li>
+  <li>Une vue dédiée aux annulations critiques, incluant des comparaisons dans le temps, des zones les plus concernées, et des tendances hebdomadaires</li>
+</ul>
+
+<div class="section-visuelle">
+  <img src="images/maquette-carglass.png" alt="Maquette du tableau de bord Qlik Sense">
+  <p>Version initiale de la maquette – en phase de conception</p>
+</div>
+
+<div class="section-visuelle">
+  <img src="images/maquette-prod-carglass.png" alt="Tableau de bord Qlik Sense en production">
+  <p>Version actuelle du tableau de bord en production</p>
+</div>
+
+<h3>Outils utilisés</h3>
+<ul>
+  <li><strong>Qlik Sense</strong> – Conception de tableaux de bord interactifs</li>
+  <li><strong>Power Query</strong> – Nettoyage automatisé de fichiers Excel</li>
+  <li><strong>SQL / Excel</strong> – Requêtes et analyse de données</li>
+  <li><strong>Outlook / Teams</strong> – Communication avec les équipes</li>
+</ul>
+
+<h3>Compétences développées</h3>
+<ul>
+  <li>Création d’indicateurs compréhensibles et pertinents</li>
+  <li>Visualisation de données pour le pilotage opérationnel</li>
+  <li>Collaboration interservices (digital, commerce, performance...)</li>
+  <li>Analyse rigoureuse de situations métiers concrètes</li>
+</ul>
+
+<h3>Liens avec les compétences du BUT SD</h3>
+<ul>
+  <li><strong>Recueillir et préparer les données</strong> : nettoyage avec Power Query, structuration avec SQL et Excel</li>
+  <li><strong>Analyser les données</strong> : création de KPIs, taux de transformation, analyses comparatives</li>
+  <li><strong>Restituer les résultats</strong> : création de dashboards Qlik, rédaction de synthèses, diffusion hebdomadaire</li>
+  <li><strong>Conduire un projet data</strong> : gestion du planning, échanges métiers, mise en production d’un outil décisionnel</li>
+</ul>
+
+<h3>Bilan</h3>
+<p>
+  Ce stage m’a permis de participer à toutes les étapes d’un projet décisionnel : compréhension du besoin métier, traitement des données, création d’analyses visuelles, et restitution aux équipes. J’ai pu allier technique et compréhension métier, avec un impact direct sur les actions des équipes de terrain.
+</p>
+
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Ariane Souchard - Portfolio Professionnel</p>
+  </footer>
+</body>
+</html>

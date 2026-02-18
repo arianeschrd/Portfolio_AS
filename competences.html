@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compétences - Ariane Souchard</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root{
+      --bleu-fonce: #114B98;
+      --bleu-clair: #00AFE6;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 35px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--bleu-fonce);
+      font-size: 32px;
+      margin-bottom: 60px;
+      text-transform: uppercase;
+    }
+
+    /* ===== LIGNES ===== */
+    .row {
+      display: grid;
+      gap: 35px;
+      margin-bottom: 45px;
+    }
+
+    /* Lignes avec 2 bulles centrées */
+    .row-2 {
+      grid-template-columns: repeat(2, minmax(280px, 380px));
+      justify-content: center; /* ⬅️ centrage horizontal */
+    }
+
+    /* Ligne avec 1 bulle */
+    .row-1 {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+
+    /* ===== BULLES ===== */
+    .bubble {
+      background-color: #f0f8ff;
+      border-radius: 22px;
+      padding: 30px 28px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+      border: 1px solid rgba(0, 175, 230, 0.35);
+      height: auto;
+    }
+
+    .bubble.large {
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .bubble h3 {
+      margin-top: 0;
+      color: var(--bleu-fonce);
+      border-bottom: 2px solid var(--bleu-clair);
+      padding-bottom: 8px;
+      font-size: 22px;
+    }
+
+    .bubble ul {
+      padding-left: 18px;
+      line-height: 1.9;
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+
+    footer {
+      background-color: var(--bleu-fonce);
+      color: white;
+      text-align: center;
+      padding: 12px;
+      font-size: 14px;
+      margin-top: 50px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .row-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .bubble.large {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="sae.html">Projets & Réalisations</a></li>
+        <li><a href="stage.html">Stage</a></li>
+        <li><a href="alternance.html">Alternance</a></li>
+        <li><a href="perspectives.html">Perspectives</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Mes compétences</h2>
+
+    <!-- LIGNE 1 : centrée -->
+    <div class="row row-2">
+      <div class="bubble">
+        <h3>Informatique décisionnelle</h3>
+        <ul>
+          <li>Oracle SQL Developer, DBeaver</li>
+          <li>NoSQL : MongoDB, Neo4j</li>
+          <li>SGBD : Oracle, Access</li>
+          <li>ETL : Talend</li>
+        </ul>
+      </div>
+
+      <div class="bubble">
+        <h3>Logiciels</h3>
+        <ul>
+          <li>SAS</li>
+          <li>R Studio & R Shiny</li>
+          <li>Power BI (DAX)</li>
+          <li>Le Sphinx</li>
+          <li>Excel</li>
+          <li>QGIS</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- LIGNE 2 : seule et large -->
+    <div class="row row-1">
+      <div class="bubble large">
+        <h3>Statistiques & Mathématiques</h3>
+        <ul>
+          <li>Statistique descriptive & inférentielle</li>
+          <li>Mathématiques & algèbre</li>
+          <li>Probabilités et simulation</li>
+          <li>Modélisation statistique avancée</li>
+          <li>Analyse de survie</li>
+          <li>Data Mining & Text Mining</li>
+          <li>Intelligence artificielle & Machine Learning</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- LIGNE 3 : centrée -->
+    <div class="row row-2">
+      <div class="bubble">
+        <h3>Langages de programmation</h3>
+        <ul>
+          <li>Python (Spyder, Jupyter)</li>
+          <li>VBA Excel</li>
+          <li>HTML / CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+
+      <div class="bubble">
+        <h3>Centres d’intérêt</h3>
+        <ul>
+          <li>Natation à haut niveau (jusqu’en 2023)</li>
+          <li>Coach bénévole</li>
+          <li>Course à pied</li>
+          <li>Badminton</li>
+          <li>Surf</li>
+          <li>Voile</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Ariane Souchard - Portfolio Professionnel</p>
+  </footer>
+</body>
+</html>
